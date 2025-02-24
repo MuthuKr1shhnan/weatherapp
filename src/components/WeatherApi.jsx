@@ -203,22 +203,31 @@ export default function WeatherApp() {
 
               <div className='flex justify-around mx-auto mb-5 w-full mt-auto'>
                 <div className='flex flex-col'>
-                  <p className='text-xl md:2xl text-gray-400 mt-2'>Humidity</p>
+                  <p className='text-xl md:[18px] text-gray-400 mt-2'>
+                    Humidity
+                  </p>
                   <div className='flex gap-5 mt-auto'>
-                    <img src='/humid1.svg' alt='' className='w-[30px]' />
-                    <p className='md:text-[18px] text-[20px]'>
-                      {" "}
+                    <img
+                      src='/weatherapp/humid1.svg'
+                      alt=''
+                      className='w-[30px]'
+                    />
+                    <p className='md:text-2xl text-[20px]'>
                       {weather.humidity}%
                     </p>
                   </div>
                 </div>
                 <div className='inline-flex flex-col '>
-                  <p className='md:text-2xl  text-xl text-gray-400 mt-2 '>
+                  <p className='md:text-[18px]  text-xl text-gray-400 mt-2 '>
                     Wind Speed
                   </p>
                   <div className='flex justify-between gap-1 mt-auto'>
-                    <img src='/humidity.svg' alt='' className='w-[32px]' />
-                    <p className='md:text-[18px] text-[20px]'>
+                    <img
+                      src='/weatherapp/humidity.svg'
+                      alt=''
+                      className='w-[32px]'
+                    />
+                    <p className='md:text-2xl text-[20px]'>
                       {" "}
                       {weather.wind} km/h
                     </p>
